@@ -7,12 +7,12 @@ let button = document.getElementById("theBoxes");
 button.addEventListener("click", myFunction);
 
 var oldValue = 0;
-var i=0;
+var i=1;
 function myFunction(){
     let n = document.getElementById('number').value;
     //Based on number we need to generate the boxes
     n= parseInt(oldValue)+parseInt(n);
-    for(i=1; i<=n; i++){
+    for(i; i<=n; i++){
         var box=document.createElement('div');
 
         //add some property in div
